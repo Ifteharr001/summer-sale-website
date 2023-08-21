@@ -49,9 +49,9 @@
             <div class="flex flex-col lg:flex-row">
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                     <!-- card 01 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod1.png" alt="Shoes" /></figure>
-                        <div class="card-body">
+                        <div  class="card-body">
                             <!-- Rating -->
                            
                             <!-- sm -->
@@ -64,12 +64,12 @@
                             </div>
                             
                             
-                            <h2 class="card-title font-semibold text-[#111] justify-center">K. Accessories</h2>
-                            <span class="text-center">39.00 TK</span>
+                            <h2  class="card-title font-semibold text-[#111] justify-center">K. Accessories</h2>
+                            <span class="text-center"><span>39.00</span> TK</span>
                         </div>
                     </div>
                     <!-- card 02 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod2.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <!-- card 03 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod3.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
@@ -113,12 +113,15 @@
                     <div class="w-[280px] h-[140px] ml-5 bg-[#F3FDE8] mt-8">
                         <h3 class="text-[#111] font-medium pl-5 pt-5 pb-3">Have coupon?</h3>
                         <div class="flex flex-1 pl-5 pr-5">
-                            <input class="border rounded-l-md pl-2 w-[160px]" type="text" placeholder="Coupon Code">
-                            <button class="btn rounded-r-md rounded-l-none text-white font-semibold bg-[#E527B2] ">Apply</button>
+                            <input id="apply-input" class="border rounded-l-md pl-2 w-[160px]" type="text" placeholder="Coupon Code">
+                            <button id="apply-btn" class="btn rounded-r-md rounded-l-none text-white font-semibold bg-[#E527B2] ">Apply</button>
                         </div>
                     </div>
                     <div class="w-[280px] ml-5 bg-[#F3FDE8] mt-5">
                         <div class="border"></div>
+                        <div class="selected-items ml-5 mt-5" id="selected-items">
+
+                        </div>
                         <div class="p-7">
                             <p class="text-[#111] font-medium ">Total Price:</p>
                             <p class="text-[#111] font-medium ">Discount Total:</p>
@@ -126,7 +129,7 @@
                         </div>
                         <div class="border"></div>
                         <div class="my-5 mx-4">
-                            <button class="btn rounded-md text-white font-semibold bg-[#E527B2] w-full ">Make Purchase</button>
+                            <button id="purchase-btn"  class="btn rounded-md text-white font-semibold bg-[#E527B2] w-full ">Make Purchase</button>
                         </div>
                     </div>
                 </div>
@@ -136,7 +139,7 @@
             <div class="flex flex-col lg:flex-row">
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                     <!-- card 01 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod4.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
@@ -156,7 +159,7 @@
                         </div>
                     </div>
                     <!-- card 02 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod5.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
@@ -176,7 +179,7 @@
                         </div>
                     </div>
                     <!-- card 03 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod6.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
@@ -211,7 +214,7 @@
             <div class="flex flex-col lg:flex-row">
                 <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
                     <!-- card 01 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod1.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
@@ -231,7 +234,7 @@
                         </div>
                     </div>
                     <!-- card 02 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod2.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
@@ -251,7 +254,7 @@
                         </div>
                     </div>
                     <!-- card 03 -->
-                    <div class="card bg-[#F3FDE8] rounded-none">
+                    <div onclick="clickButton(this)" class="card bg-[#F3FDE8] rounded-none">
                         <figure class="bg-[#1111110D] m-[10px] rounded-md"><img class="py-9" src="/images/prod3.png" alt="Shoes" /></figure>
                         <div class="card-body">
                             <!-- Rating -->
