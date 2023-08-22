@@ -37,6 +37,8 @@ function clickButton(element){
     }else{
         applyButton.setAttribute('disabled')
     }
+
+    
 }
 
 
@@ -53,21 +55,35 @@ function clickButton(element){
         }
     });
 
-// document.getElementById('modal-btn').addEventListener('click', function(){
-//     const totalValue = document.getElementById('total');
-//     const totalValueString = totalValue.innerText;
-//     const total = parseFloat(totalValueString);
+document.getElementById('modal-btn').addEventListener('click', function () {
 
-//     const discountTotalValue = document.getElementById('discount-total');
-//     const discountTotalValueString = discountTotalValue.innerText;
-//     const discount = parseFloat(discountTotalValueString);
+    const resetSelectedItems = document.getElementById('selected-items');
+    if (resetSelectedItems) {
+        resetSelectedItems.remove();
+    }
 
-//     const finalTotalValue = document.getElementById('final-total');
-//     const finalTotalValueString = finalTotalValue.innerText;
-//     const finalTotal = parseFloat(finalTotalValueString);;
+    const resetButton = document.getElementById('purchase-btn');
+    resetButton.setAttribute('disabled', 'disabled')
 
-//     total.innerText = ' ';
-//     discount.innerText = ' ';
-//     finalTotal.innerText = ' ';
-// })
+    const resetApplyBtn = document.getElementById('apply-btn');
+    resetApplyBtn.setAttribute('disabled', 'disabled')
 
+    const resetValue = document.getElementById('apply-input');
+    resetValue.value = '';
+
+   
+
+    const resetTotal = document.getElementById('total');
+    resetTotal.innerText = '00';
+
+    const resetDescount = document.getElementById('discount-total');
+    resetDescount.innerText = '00';
+
+    const resetFinalTotal = document.getElementById('final-total');
+    resetFinalTotal.innerText = '00';
+
+    c
+   
+
+    
+})
