@@ -53,3 +53,21 @@ function clickButton(element){
         }
     });
 
+// document.getElementById('modal-btn').addEventListener('click', function(){
+//     const totalValue = document.getElementById('total');
+//     const totalValueString = totalValue.innerText;
+//     const total = parseFloat(totalValueString);
+
+//     const discountTotalValue = document.getElementById('discount-total');
+//     const discountTotalValueString = discountTotalValue.innerText;
+//     const discount = parseFloat(discountTotalValueString);
+
+//     const finalTotalValue = document.getElementById('final-total');
+//     const finalTotalValueString = finalTotalValue.innerText;
+//     const finalTotal = parseFloat(finalTotalValueString);;
+
+//     total.innerText = ' ';
+//     discount.innerText = ' ';
+//     finalTotal.innerText = ' ';
+// })
+

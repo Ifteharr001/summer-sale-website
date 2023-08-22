@@ -279,8 +279,18 @@
                             </div>
                             <div class="border"></div>
                             <div class="my-5 mx-4">
-                                <button id="purchase-btn" class="btn rounded-md text-white font-semibold bg-[#E527B2] w-full" disabled>Make
+                                <button id="purchase-btn" class="btn rounded-md text-white font-semibold bg-[#E527B2] w-full" onclick="my_modal_1.showModal()" disabled>Make
                                     Purchase</button>
+                                    <dialog id="my_modal_1" class="modal">
+                                        <form method="dialog" class="modal-box text-center">
+                                            <img class="inline-block" src="images/congo.png" alt="">
+                                            <h3 class="text-[#111] text-3xl font-bold text-center">Congratulations</h3>
+                                            <p class="py-4 text-center">Your Purchase the product</p>
+                                            <div class="modal-action justify-center">
+                                                <button id="modal-btn" class="btn  hover:bg-[#E527B2] text-white px-4 py-3 bg-[#E527B2]">Go Home</button>
+                                            </div>
+                                        </form>
+                                    </dialog>
                             </div>
                         </div>
                     </div>
@@ -288,6 +298,8 @@
         </section>
     </main>
 
+    
+    
 
     <!-- JS file -->
     <script src="js/script.js"></script>
