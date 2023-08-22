@@ -80,10 +80,5 @@ document.getElementById('modal-btn').addEventListener('click', function () {
     resetDescount.innerText = '00';
 
     const resetFinalTotal = document.getElementById('final-total');
-    resetFinalTotal.innerText = '00';
-
-    c
-   
-
-    
+    resetFinalTotal.innerText = '00'; 
 })
